@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  install:
+    build: ./install
+    volumes:
+      - ./:/app
+  #Добавить в /etc/hosts -> 127.0.0.1  uni.shell
+  #Добавить в .env UNI_BASE_URL = "http://uni.shell"
+#  project:
+#    build: ./project/docker
+#    environment:
+#      APP_ENV: dev
+#      APP_DEBUG: 1
+#      DB_HOST: api-postgres
+#      DB_USER: app
+#      DB_PASSWORD: secret
+#      DB_NAME: app
+#    network_mode: bridge
+#    volumes:
+#      - ./project:/app
+#    ports:
+#      - 8802:80

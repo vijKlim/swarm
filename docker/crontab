@@ -1,0 +1,9 @@
+# New post jobs
+#*/30 * * * * /usr/local/bin/php /app/core/uni/yii new-post-queue/check-documents-status
+
+#*/15 * * * * /usr/local/bin/php /app/core/uni/yii rozetka-queue/account-info
+#*/30 * * * * /usr/local/bin/php /app/core/uni/yii rozetka-queue/check-new-order
+
+# Planfix
+# 01 01 * * * /usr/local/bin/php /app/core/uni/yii plan-fix-queue/project
+# 02 01 * * * /usr/local/bin/php /app/core/uni/yii plan-fix-queue/status

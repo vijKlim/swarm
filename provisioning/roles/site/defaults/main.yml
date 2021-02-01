@@ -1,0 +1,4 @@
+certbot_email: mail@aquastrada.com
+certbot_hosts:
+    - aquastrada.com
+    - api.aquastrada.com
